@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chat Session
+{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div id="messages"></div>
+<input id="messageInput" type="text" placeholder="Type your message here...">
+<button id="sendButton">Send</button>
+{% endblock %}
